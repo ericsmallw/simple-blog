@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>Simple Blog</h1>
+<section id="createPost">
+    <h2>Create New Post</h2>
+    <form id="newPostForm">
+        <div>
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="title" required>
+        </div>
+        <div>
+            <label for="postBody">Body:</label>
+            <textarea id="postBody" name="body" required></textarea>
+        </div>
+        <button type="submit">Submit Post</button>
+    </form>
+</section>
+
+<section id="posts">
+    <h2>Blog Posts</h2>
+    <div id="postsList">
+
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
