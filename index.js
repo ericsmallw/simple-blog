@@ -1,7 +1,7 @@
 jQuery(function() {
     function fetchPosts() {
         jQuery.ajax({
-            url: 'getPosts.php',
+            url: 'get_posts.php',
             type: 'GET',
             success: function(posts) {
                 jQuery('#postsList').empty();
@@ -21,11 +21,11 @@ jQuery(function() {
         };
 
         jQuery.ajax({
-            url: 'post.php',
+            url: 'create_post.php',
             type: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(postData),
-            success: function() {
+            success: function(result) {
                 alert('Post successfully created!');
                 jQuery('#postTitle').val('');
                 jQuery('#postBody').val('');
