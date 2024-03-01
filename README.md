@@ -25,7 +25,7 @@ For database and environment settings, create a `.env` file in the project root 
 
 ### Database Initialization
 
-Execute `psql -U postgres -f create-db.sql` on the commadn line to create and set up the necessary database tables.
+Execute `psql -U postgres -f create-db.sql` on the command line to create and set up the necessary database tables.
 
 ## Access the Application
 
