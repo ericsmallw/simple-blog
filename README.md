@@ -23,7 +23,7 @@
 
 ### Environment Setup
 
-For database and environment settings, create a `.env` file in the project root based on `sample_env.php`. Populate it with your local settings.
+For database and environment settings, create a `env.php` file in the project root based on `sample_env.php`. Populate it with your local settings.
 
 ### Database Initialization
 
