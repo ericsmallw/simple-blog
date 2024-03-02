@@ -15,6 +15,8 @@
     extension=pgsql
     ```
 
+** macOS SUsers:** PHP installations on macOS do not come with the PostgreSQL extensions pre-installed. You'll need to install these extensions manually
+
 3. Save the changes and close the file.
 
 ## Application Configuration
@@ -25,7 +27,7 @@ For database and environment settings, create a `.env` file in the project root 
 
 ### Database Initialization
 
-Execute `psql -U postgres -f create-db.sql` on the command line to create and set up the necessary database tables.
+Execute `psql -U postgres -f create_db.sql` on the command line to create and set up the necessary database tables.
 
 ## Access the Application
 
