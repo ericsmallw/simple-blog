@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $body = $data['body'];
 
         if(strlen($title) > 255) {
-          echo "Title Too Large";
+            echo "Title Too Large";
         } else if(str_word_count($body) > 1000 || strlen($body) > 8000) {
             echo "Body Too Large";
         } else {

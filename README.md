@@ -40,3 +40,7 @@ php -S localhost:8000
 ```
 
 With the server running, open a web browser and navigate to `http://localhost:8000`. You should see the Simple Blog application running.
+
+## Access the API
+To Create a post send a post request to the endpoint: localhost:8000/create_post.php
+To Get all posts send a get request to the endpoint: localhost:8000/get_posts.php
